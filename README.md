@@ -7,7 +7,13 @@ git clone https://github.com/your-username/dsa-instructor.git
 
 cd "DSA Instructor"
 
-# 2.Enter your API key:
+# 2.Install necessary node module
+
+npm init
+
+npm install
+
+# 3.Enter your API key:
 
 Open the script.js file in the project folder.
 
@@ -15,6 +21,6 @@ Find the section where the API key is required (look for a comment or variable l
 
 Paste your API key in the appropriate place and save the file.
 
-# 3.Open the application:
+# 4.Open the application:
 
 open index.html in your web browser(Go Live).
