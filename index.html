@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA-Bot Instructor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-logo" id="sidebar-logo" title="New Chat">
+                <img src="dsa_logo.png" alt="DSA Logo" />
+            </div>
+            <button id="new-chat-btn" class="new-chat-btn">
+                <span class="material-icons">add</span>
+                New Chat
+            </button>
+            <div class="chat-history-list">
+                <h3>Chat History</h3>
+                <div id="history-list">
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div id="main-content" style="display: flex; height: 100vh;">
+            <!-- Left: Chat and Info -->
+            <div id="chat-container" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                <header>
+                    <button id="menu-toggle" class="menu-toggle">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <h1><span id="main-headline">DSA-Bot Instructor</span></h1>
+                    <button id="theme-toggle" class="theme-toggle" title="Toggle light/dark mode">
+                        <span class="material-icons" id="theme-icon">dark_mode</span>
+                    </button>
+                </header>
+                <div id="chat-info">
+                    Ask me questions related to DSA
+                </div>
+                <div id="chat-history"></div>
+                <div id="chat-form-container">
+                    <form id="chat-form">
+                        <textarea id="user-input" placeholder="Ask a DSA question..." autocomplete="off" required rows="1"></textarea>
+                        <button type="submit">
+                            <span class="material-icons">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
